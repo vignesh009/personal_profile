@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
 	                    // reload background
 	    				$.backstretch("resize");
 $(document).ready(function() {
-   window.open("http://www.patgarvignesh.in","_self");
+   window.open("http://www.vigneshpatgar.in","_self");
 });
 	                });
 	            }
