@@ -28,6 +28,12 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+         #map {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+
+      }
 
     </head>
 
@@ -75,6 +81,24 @@
 			                        <button type="submit" class="btn">Send message</button>
 			                    </form>
 		                    </div>
+                            <div class="row">
+                <div class="heading text-center">
+                    <!-- Heading -->
+                    <h1><strong>Location</strong></h1>
+                    <div id="map"></div>
+                        <script>
+                            function initMap() {
+                            var mapDiv = document.getElementById('map');
+                            var map = new google.maps.Map(mapDiv, {
+                            center: {lat:15.3681469, lng:75.127831},
+                            zoom:18
+                            });
+                            }
+                       </script>
+                     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                            async defer></script>
+                </div>
+            </div>
                         </div>
                     </div>
                 </div>
